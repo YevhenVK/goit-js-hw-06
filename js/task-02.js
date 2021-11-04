@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
  
-const ulElements = document.createElement('li');
+const ulElements = document.createElement('ul');
 console.log(ulElements)
 
 const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
