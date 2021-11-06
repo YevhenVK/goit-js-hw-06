@@ -18,9 +18,10 @@ const ulEl = document.querySelector(".gallery");
 
 ulEl.style.display = "flex";
 ulEl.style.justifyContent = "space-between";
+ulEl.style.textDecoration = "none";
 
 const makeGallery = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}" width = 780></li>`)
+  .map((image) => `<li><img src="${image.url}" alt="${image.alt}" width = 700></li>`)
   .join("");
 
 ulEl.insertAdjacentHTML('beforeEnd', makeGallery);
