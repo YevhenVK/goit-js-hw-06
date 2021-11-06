@@ -23,7 +23,10 @@ button {
   cursor: pointer;
 }
 
+/* Task 3 */
 /* .gallery {
+  width = 700px;
+  height = 500px;
   display: flex;
   justify-content: space-between;
   list-style: none;
