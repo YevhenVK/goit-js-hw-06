@@ -7,3 +7,4 @@ button.addEventListener("click", () => {
   console.log("Button was clicked and changed a background-color");
   document.body.style.backgroundColor = getRandomHexColor();
 });
+
