@@ -21,7 +21,7 @@ ulEl.style.justifyContent = "space-between";
 ulEl.style.listStyle = "none";
 
 const makeGallery = images
-  .map((image) => `<li><img src="${image.url}" alt="${image.alt}" width = 500 height = 400></li>`)
+  .map((image) => `<li><img src="${image.url}" alt="${image.alt}" width = 400 height = 300></li>`)
   .join("");
 
 ulEl.insertAdjacentHTML('beforeEnd', makeGallery);
