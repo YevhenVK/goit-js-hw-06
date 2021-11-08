@@ -7,15 +7,17 @@ const ingredients = [
   'Condiments',
 ];
  
-const ulElements = document.createElement('ul');
-console.log(ulElements)
 
-const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
+const ingredienEl = document.querySelector("#ingredients");
+console.log(ingredienEl);
 
-ulElements.innerHTML = list;
+const veg = ingredients.map((option) => {
+  const ulElements = document.createElement("li");
+  ulElements.classList.add("item");
+  ulElements.textContent = option;
 
-// const ulElements = document.querySelector('#ingredients');
+  return ulElements;
+});
 
-// const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
-
-// ulElements.innerHTML = list;
+console.log(veg);
+ingredienEl.append(...veg);
