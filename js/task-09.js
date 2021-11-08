@@ -3,14 +3,20 @@ function getRandomHexColor() {
 }
 const button = document.querySelector(".change-color");
 const span = document.querySelector("span");
+
 button.addEventListener("click", () => {
-  console.log("Button was clicked and changed a background-color");
   document.body.style.backgroundColor = getRandomHexColor();
   span.textContent = getRandomHexColor();
+  console.log("Button was clicked and changed a background-color");
 });
 
 // const span = document.querySelector(".color");
 
-// span.addEventListener("click", () => {
-  
+// button.addEventListener("click", () => {
+//   span.textContent = getRandomHexColor();
 // })
+
+
+// запускать рандом функцию,
+//   записывать результат запуска в переменную,
+//     и уже переменную добавлять как цвет на фон и в спан
