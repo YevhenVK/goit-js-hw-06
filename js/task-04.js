@@ -1,21 +1,20 @@
-let valueEl = Number(document.querySelector('#value').textContent);
+let valueEl = document.querySelector('#value');
+let counterValue = 0;
 
-let counterValue = document.querySelector('#value');
+const decrBtn = document.querySelector('#counter').firstElementChild;
+const incrBtn = document.querySelector('#counter').lastElementChild;
 
-const dekrBtn = document.querySelector('#counter').firstElementChild;
-const inkrBtn = document.querySelector('#counter').lastElementChild;
-
-inkrBtn.addEventListener('click', event => {
+incrBtn.addEventListener('click', () => {
   console.log("Add new member");
-  valueEl += 1;
-
-  counterValue.innerText = valueEl;
+  counterValue += 1;
+  valueEl.textContent = counterValue;
 });
 
-dekrBtn.addEventListener('click', event => {
+decrBtn.addEventListener('click', () => {
   console.log("Remove member");
-  valueEl -= 1;
-
-  counterValue.innerText = valueEl;
+  counterValue -= 1;
+  valueEl.textContent = counterValue;
 //   console.log("counterValue", counterValue);
 });
+
+
